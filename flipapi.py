@@ -4,7 +4,7 @@ import requests
 
 def getFlippers():
     site = requests.get("https://ship.flipp.dev/")
-    soup = BeautifulSoup(site.text, features="html.parser")
+    soup = BeautifulSoup(site.text)
     shipped = soup.find_all(class_="flipper")[0]
     textfilter = filter(str.isdigit, shipped)
     shipped = "".join(textfilter)
