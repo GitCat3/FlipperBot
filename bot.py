@@ -20,4 +20,4 @@ async def flippers(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run("OTUxODQ4NTYxOTY2OTgxMTMw.YitcDQ.ESgBjlChugxw8DUol00FpVzE6MM")
+bot.run(token)
